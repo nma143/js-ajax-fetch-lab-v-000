@@ -4,18 +4,7 @@ function getToken() {
 
   const token = '2e6f6df7c0983eee3796149a7639be1f887a9998';
 
-  fetch('https://api.github.com/user/repos',
-  {
-    headers:
-    {
-      Authorization: `token ${token}`
-    }
-  })
-    .then(res => res.json())
-    .then(json => console.log(json));
-
-
-  return '';
+  return token;
 }
 
 function forkRepo() {
