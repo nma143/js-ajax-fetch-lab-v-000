@@ -3,10 +3,10 @@ function getToken() {
   //back to '' before committing so all tests pass
 
   const token = '2e6f6df7c0983eee3796149a7639be1f887a9998';
-   
-  fetch('https://api.github.com/user/repos', 
+
+  fetch('https://api.github.com/user/repos',
   {
-    headers: 
+    headers:
     {
       Authorization: `token ${token}`
     }
